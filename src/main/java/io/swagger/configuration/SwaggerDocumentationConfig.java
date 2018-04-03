@@ -18,7 +18,7 @@ public class SwaggerDocumentationConfig {
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
             .title("nfvi")
-            .description("No descripton provided 页面描述")
+            .description("No descripton provided 页面描述 ")
             .license("")
             .licenseUrl("")
             .termsOfServiceUrl("")
