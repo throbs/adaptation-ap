@@ -16,3 +16,5 @@ You can view the api documentation in swagger-ui by pointing to
 http://localhost:8080/  
 
 Change default port value in application.properties
+
+1、20180404 注释了代码文档，并修改了note，commit

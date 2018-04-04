@@ -20,6 +20,8 @@ import java.util.List;
 @Api(value = "nm_perf", description = "the nm_perf API")
 public interface NmPerfApi {
 
+	//@ApiOperation(value = “接口说明”, httpMethod = “接口请求方式”, response = “接口返回参数类型”, notes = “接口发布说明”)；其他参数可参考源码
+
     @ApiOperation(value = "Get 1 day nm_perf data", notes = "Get 1 day nm_perf data", response = Per.class, tags={  })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "successful operation", response = Per.class),
@@ -30,6 +32,8 @@ public interface NmPerfApi {
         method = RequestMethod.GET)
     ResponseEntity<Per> nmPerf1dayGet(@ApiParam(value = "The nfvi username", required = true) @RequestParam(value = "username", required = true) String username
 
+
+//@ApiParam(required = “是否必须参数”, name = “参数名称”, value = “参数具体描述”）
 
 
 ,@ApiParam(value = "The nfvi password", required = true) @RequestParam(value = "password", required = true) String password
