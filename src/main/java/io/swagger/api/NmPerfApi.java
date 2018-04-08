@@ -21,7 +21,8 @@ import java.util.List;
 public interface NmPerfApi {
 
 	//@ApiOperation(value = “接口说明”, httpMethod = “接口请求方式”, response = “接口返回参数类型”, notes = “接口发布说明”)；其他参数可参考源码
-
+	//@ApiResponse(code = 数字, message = "信息，例如请求参数没填好", response = 抛出异常的类);
+		
     @ApiOperation(value = "Get 1 day nm_perf data", notes = "Get 1 day nm_perf data", response = Per.class, tags={  })
     @ApiResponses(value = { 
         @ApiResponse(code = 200, message = "successful operation", response = Per.class),

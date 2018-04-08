@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2018-04-03T17:20:01.502+08:00")
 
-@javax.xml.bind.annotation.XmlRootElement
+@javax.xml.bind.annotation.XmlRootElement		//XmlRootElement便于对象与xml文件之间的转换
 public class ApiResponseMessage {
 	public static final int ERROR = 1;
 	public static final int WARNING = 2;
@@ -43,7 +43,7 @@ public class ApiResponseMessage {
 		this.message = message;
 	}
 
-	@XmlTransient
+	@XmlTransient		//注解解决 JavaBean 属性名称与字段名称之间的名称冲突，或者用于防止字段/属性的映射
 	public int getCode() {
 		return code;
 	}
