@@ -18,3 +18,4 @@ http://localhost:8080/
 Change default port value in application.properties
 
 1、20180404 注释了代码文档，并修改了note，commit
+2、20180409 添加了对数据库的操作，application.properties、pom配置
