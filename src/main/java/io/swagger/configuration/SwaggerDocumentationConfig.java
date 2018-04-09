@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2018-04-03T17:20:01.502+08:00")
 
 //用@Configuration注解该类，等价于XML中配置beans；用@Bean标注方法等价于XML中配置bean
-@Configuration
+@Configuration			//Spring-Boot run入口函数启动后，会自动加载这个类里面的配置
 public class SwaggerDocumentationConfig {
 
     ApiInfo apiInfo() {
@@ -40,3 +40,8 @@ public class SwaggerDocumentationConfig {
     }
 
 }
+/**
+ * apis(RequestHandlerSelectors.basePackage("io.swagger.api"))，
+ * 这个包下面放的所有controller都会被添加进swagger2的UI界面里，实现API文档的在线自动长成。
+ * 
+ * **/

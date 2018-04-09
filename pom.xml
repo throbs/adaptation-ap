@@ -46,6 +46,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>			<!-- spring-boot-start-web包含了spring webmvc和tomcat等web开发的特性 -->
         </dependency>
+ <!--     	新添加mysql的依赖   		
+      	<dependency>
+      		<groupId>org.springframework.boot</groupId>
+      		<artifactId>spring-boot-starter-data-jpa</artifactId>			#spring-boot-starter-data-jpa会下载所有Spring Data Jpa所需的依赖
+      	</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
