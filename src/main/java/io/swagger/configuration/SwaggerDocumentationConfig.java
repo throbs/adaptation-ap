@@ -28,10 +28,10 @@ public class SwaggerDocumentationConfig {
             .build();
     }
 
-    @Bean
+    @Bean					//定义一个类型为Docket的bean,Docket的select()方法会提供给swagger-springmvc framework的一个默认构造器（ApiSelectorBuilder），这个构造器为配置swagger提供了一系列的默认属性和便利方法。
     public Docket customImplementation(){
         return new Docket(DocumentationType.SWAGGER_2)
-                .select()
+                .select()								// 选择那些路径和api会生成document
                     .apis(RequestHandlerSelectors.basePackage("io.swagger.api"))
                     .build()
                 .directModelSubstitute(org.joda.time.LocalDate.class, java.sql.Date.class)

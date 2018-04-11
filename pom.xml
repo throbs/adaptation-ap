@@ -9,7 +9,7 @@
     <name>swagger-spring</name>
     <version>1.0.0</version>
     <properties>
-    	<!-- java jdk 版本声明 可变更 根据自己配置去匹配 -->
+    	<!-- java jdk 版本声明 可变量 根据自己配置去匹配(可以进行变量的定义) -->
         <java.version>1.7</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -63,13 +63,13 @@
         </dependency>
         <!--SpringFox dependencies -->
         <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
+            <groupId>io.springfox</groupId>					<!-- groupID : 组织内的唯一标示 -->
+            <artifactId>springfox-swagger2</artifactId>		<!-- 添加maven依赖, artifactId : 项目的唯一标示  -->
             <version>${springfox-version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
+            <artifactId>springfox-swagger-ui</artifactId>				<!-- 通过Swagger UI为项目提供api展示及测试的界面 -->
             <version>${springfox-version}</version>
         </dependency>
 		
@@ -86,5 +86,6 @@
 </project>
 
 
+<!--pom.xml 作用：管理项目的依赖和项目的编译等功能  -->
 <!-- maven认为，程序对外部的依赖会随着程序的所处阶段和应用场景而变化，所以maven中的依赖关系有作用域(scope)的限制。 -->
 <!--scope包含如下的取值：compile（编译范围）、provided（已提供范围）、runtime（运行时范围）、test（测试范围）、system（系统范围） --> 

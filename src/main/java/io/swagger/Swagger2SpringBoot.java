@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * 主类要位于根包路径下，方便之后的扫描(We generally recommend that you locate your main application class in a root package above other classes.)
  * 
  **/
-@SpringBootApplication						//开启组件扫描和自动配置
+@SpringBootApplication						//引导应用程序，开启组件扫描和自动配置
 @EnableSwagger2								//也可称为@Abracadabra，配置开启了Spring Boot自动配置的魔力
 @ComponentScan(basePackages = "io.swagger")		//启用组件扫描
 public class Swagger2SpringBoot implements CommandLineRunner {

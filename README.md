@@ -17,5 +17,6 @@ http://localhost:8080/
 
 Change default port value in application.properties
 
-1、20180404 注释了代码文档，并修改了note，commit
-2、20180409 添加了对数据库的操作，application.properties、pom配置
+1、20180404 注释了代码文档，并修改了note，commit； 
+2、20180409 添加了对数据库的操作，application.properties、pom配置； 
+3、20180411 完善注释，springfox的大致原理就是，在项目启动的过种中，spring上下文在初始化的过程，框架自动跟据配置加载一些swagger相关的bean到当前的上下文中，并自动扫描系统中可能需要生成api文档那些类，并生成相应的信息缓存起来。如果项目MVC控制层用的是springMvc那么会自动扫描所有Controller类，跟据这些Controller类中的方法生成相应的api文档。

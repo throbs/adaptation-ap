@@ -36,7 +36,7 @@ public class Per   {
    * Get OBJID
    * @return OBJID
   **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "")				//@ApiModelProperty()用于方法，字段； 表示对model属性的说明或者数据操作更改 ，value：字段说明
   public String getOBJID() {
     return OBJID;
   }
@@ -130,7 +130,7 @@ public class Per   {
   public String getKPIVLAUE() {
     return KPI_VLAUE;
   }
-
+  												//属性注入方式有三种，其中这里的是使用set方法注入
   public void setKPIVLAUE(String KPI_VLAUE) {
     this.KPI_VLAUE = KPI_VLAUE;
   }
@@ -158,7 +158,7 @@ public class Per   {
     return Objects.hash(OBJID, SUBOBJ_ID, COLLECTTIME, TYPE_ID, KPI_ID, KPI_VLAUE);
   }
 
-  @Override
+  @Override						//append 将指定的字符串追加到此字符序列
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Per {\n");
