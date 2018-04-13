@@ -15,12 +15,14 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
+//本controller的功能描述
+
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2018-04-03T17:20:01.502+08:00")
 
 @Api(value = "nm_perf", description = "the nm_perf API")
 public interface NmPerfApi {
 
-	//@ApiOperation(value = “接口说明”, httpMethod = “接口请求方式”, response = “接口返回参数类型”, notes = “接口发布说明”)；其他参数可参考源码
+	//@ApiOperation(value = “接口说明（value的内容是这个method的描述）”, httpMethod = “接口请求方式”, response = “接口返回参数类型（是最终返回的json model）”, notes = “接口发布说明（详细描述）”)；其他参数可参考源码
 	//@ApiResponse(code = 数字, message = "信息，例如请求参数没填好", response = 抛出异常的类);
 		
     @ApiOperation(value = "Get 1 day nm_perf data", notes = "Get 1 day nm_perf data", response = Per.class, tags={  })

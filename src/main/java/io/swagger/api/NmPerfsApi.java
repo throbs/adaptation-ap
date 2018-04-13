@@ -15,6 +15,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
+//本controller的功能描述
+
 @javax.annotation.Generated(value = "class io.swagger.codegen.languages.SpringCodegen", date = "2018-04-03T17:20:01.502+08:00")
 
 @Api(value = "nm_perfs", description = "the nm_perfs API")
