@@ -64,25 +64,31 @@
             <version>${springfox-version}</version>
         </dependency>
         
-<!--  新添加mysql的依赖	  -->
-		<dependency>
-		    <groupId>org.hibernate</groupId>
-		    <artifactId>hibernate-validator</artifactId>
-		</dependency>
+<!--  新添加mysql的依赖	  
       	<dependency>
       		<groupId>org.springframework.boot</groupId>
-      		<artifactId>spring-boot-starter-data-jpa</artifactId>			<!-- spring-boot-starter-data-jpa会下载所有Spring Data Jpa所需的依赖 -->
+      		<artifactId>spring-boot-starter-data-jpa</artifactId>			#spring-boot-starter-data-jpa会下载所有Spring Data Jpa所需的依赖
       	</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+-->
+
+<!--  	
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+
+		直接通过JDBC访问,使用hibernate框架
 		<dependency>
    			<groupId>org.hibernate</groupId>
     		<artifactId>hibernate-validator</artifactId>
-      <!--  <version>${hibernate.validator.version}</version>	-->
+      		<version>${hibernate.validator.version}</version>
 		</dependency>
-		
+-->		
 		<!--日期转换 -->
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
